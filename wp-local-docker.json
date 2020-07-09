@@ -1,0 +1,18 @@
+{
+    "hostname": "woo.test",
+    "addMoreHosts": true,
+    "extraHosts": [ "subsite.woo.test" ],
+    "addHttps": true,
+    "mediaProxy": false,
+    "phpVersion": "7.4",
+    "elasticsearch": false,
+    "wordpress": true,
+    "wordpressType": "subdomain",
+    "emptyContent": true,
+    "title": "WooCommerce Test",
+    "username": "admin",
+    "password": "password",
+    "email": "admin@example.com",
+    "snapshot_id": "",
+    "mount_point": "wp-content/plugins/woocommerce/"
+}
