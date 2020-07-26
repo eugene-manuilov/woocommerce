@@ -76,11 +76,11 @@ exports.mountPoint = "/wp-content/plugins/woocommerce";
 exports.dockerCompose = function( baseConfig ) {
     const config = { ...baseConfig };
 
-    // add redis service
+    // replace memcached with redis service
     config.services.phpfpm.depends_on.push( 'redis' );
-    config.services.redis = {
-        image: 'redis:latest',
-    };
+    config.services.phpfpm.depends_on = config.services.phpfpm.depends_on.filter( ( service ) => service !== 'memcached' );
+    config.services.redis = { image: 'redis:latest' };
+    delete config.services.memcached;
 
     return config;
 };
