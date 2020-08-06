@@ -48,7 +48,6 @@ exports.wordpress = {
     username: "admin",
     password: "password",
     email: "admin@example.com",
-    https: true,
     purify: true,
 };
 
