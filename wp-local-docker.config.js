@@ -22,27 +22,6 @@ exports.domain = ["woo.test", "subsite.woo.test"];
 exports.mediaProxy = false;
 
 /**
- * Optional. Instructions to display after cloning this project. Supports simplified
- * markdown:
- *  - headers: #, ##, ###, ####, #####, ######
- *  - lists: *, 1.
- *  - links: [text](url)
- *  - formatting: **bold**, *italic*, _italic_, \`code\`
- *
- * @example
- * # Next Steps:
- * 1. Go to the project folder
- * 1. PHP:
- *    1. Install composer dependencies using \`composer install\`
- * 1. Assets:
- *    1. Install npm dependencies using \`npm i\`
- *    1. Build assets with \`npm run build\`
- *
- * @type {string}
- */
-exports.instructions = \`
-\`;
-/**
  * The PHP version to use for the project. Available options are 7.4, 7.3,
  * 7.2, 7.1, 7.0 and 5.6.
  *
@@ -86,7 +65,6 @@ exports.snapshot = "";
  * @type {string}
  */
 exports.mountPoint = "/wp-content/plugins/woocommerce";
-
 
 /**
  * Optional. Instructions to display after cloning this project. Supports simplified
